@@ -2,7 +2,7 @@ package com.workintech.challenge.model;
 
 import com.workintech.challenge.util.EnumTypes.UserRole;
 import com.workintech.challenge.util.EnumTypes.BookStatus;
-
+// Librarian class
 public class Librarian extends Person {
     private UserRole role;
 

@@ -1,7 +1,7 @@
 package com.workintech.challenge.model;
 
 import java.util.Date;
-
+// TransactionDetails class
 public class Invoice {
     private int id;
     private int userId;

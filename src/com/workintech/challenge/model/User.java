@@ -13,7 +13,7 @@ public class User extends Person {
     private String password;
     private String role;
 
-
+    // Constructor
     public User(int id, String name, String email, String username, String password, String role, int memberRecordId) {
         super(id, name, email);
         this.username = username;

@@ -44,9 +44,9 @@ public class InvoiceService {
     public double calculateAmount(Book book, String transactionType) {
         double basePrice = book.getPrice();
         if (transactionType.equals("borrow")) {
-            return basePrice * 0.1;  // Ödünç alma işlemi için %10 ücret alınsın
+            return basePrice * 0.1;  // Ödünç alma işlemi için %10 ücret alınsın.
         } else if (transactionType.equals("return")) {
-            return basePrice * 0.05;  // İade işlemi için %5 iade edilsin
+            return basePrice * 0.05;  // İade işlemi için %5 iade edilsin.
         }
         return 0;
     }

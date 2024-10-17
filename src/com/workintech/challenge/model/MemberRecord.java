@@ -48,7 +48,7 @@ public class MemberRecord implements Holder{
     public Date getDateOfMembership() {
         return dateOfMembership;
     }
-
+    //üyelik tarihi bugünden sonra olamaz
     public void setDateOfMembership(Date dateOfMembership) {
         if (dateOfMembership == null || dateOfMembership.after(new Date())) {
             throw new IllegalArgumentException("Üyelik tarihi bugünden sonra olamaz.");

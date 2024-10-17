@@ -27,7 +27,7 @@ public abstract class Person implements Holder {
     public String getName() {
         return name;
     }
-
+    //İsim boş olamaz
     public void setName(String name) {
         if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException("İsim boş olamaz.");

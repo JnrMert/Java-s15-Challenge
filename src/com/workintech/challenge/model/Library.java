@@ -26,7 +26,7 @@ public class Library {
         books.put(book.getId(), book);
     }
 
-
+    // Remove book method
     public void removeBook(int bookId) {
         if (books.containsKey(bookId)) {
             books.remove(bookId);

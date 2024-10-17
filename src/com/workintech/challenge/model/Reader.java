@@ -21,7 +21,7 @@ public class Reader extends User {
                 email,
                 userRole);
         }
-
+    // Maksimum kitap limitine ulaşıldığında IllegalStateException fırlatır
     public void borrowBook(Book book) {
         if (this.borrowedBooks.size() >= Constants.MAX_BOOK_LIMIT) {
             throw new IllegalStateException("Maksimum kitap limitine ulaşıldı.");

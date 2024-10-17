@@ -52,7 +52,7 @@ public class Author {
         this.biography = biography;
     }
 
-
+        // Override toString method
     @Override
     public String toString() {
         return "Author{" +
