@@ -142,20 +142,17 @@ public class LibraryConsoleApp {
 
     private static void initialize() throws Exception {
         userService.addUser("Admin User", "admin@library.com", "admin", "admin", "ADMIN", "Admin");
-        userService.addUser("Librarian User", "librarian@library.com", "librarian", "librarian123", "LIBRARIAN", "Staff");
-        userService.addUser("Reader User", "reader@library.com", "reader", "reader123", "READER", "Reader");
+        userService.addUser("Librarian User", "librarian@library.com", "librarian", "librarian", "LIBRARIAN", "Staff");
+        userService.addUser("Reader User", "reader@library.com", "reader", "reader", "READER", "Reader");
         try {
-            bookService.addBook(new Book(1, "Aşk ve Gurur", "Jane Austen", 150.0, "2", new SimpleDateFormat("yyyy-MM-dd").parse("2021-01-01"), BookStatus.AVAILABLE, "Klasik"));
-            bookService.addBook(new Book(2, "Don Kişot", "Cervantes Saavedra", 200.0, "6", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.AVAILABLE,"Roman"));
-            bookService.addBook(new Book(3, "Fareler ve İnsanlar", "John Steinbeck", 320.0, "7", new SimpleDateFormat("yyyy-MM-dd").parse("2021-01-01"), BookStatus.AVAILABLE,"Roman"));
-            bookService.addBook(new Book(4, "Hamlet", "William Shakespeare", 230.0, "10", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.AVAILABLE,"Roman"));
-            bookService.addBook(new Book(5, "İki Şehrin Hikayesi", "Charles Dickens", 120.0, "3", new SimpleDateFormat("yyyy-MM-dd").parse("2021-01-01"), BookStatus.AVAILABLE,"Klasik"));
-            bookService.addBook(new Book(6, "Kırmızı ve Siyah", "Henri Beyle Stendhal", 220.0, "11", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.AVAILABLE,"Hikaye"));
-            bookService.addBook(new Book(7, "Mutlu Prens", "Oscar Wilde", 150.0, "41", new SimpleDateFormat("yyyy-MM-dd").parse("2021-01-01"), BookStatus.AVAILABLE,"Hikaye"));
-            bookService.addBook(new Book(8, "Savaş ve Barış", "Lev Nikolayeviç Tolstoy", 280.0, "37", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.AVAILABLE,"Roman"));
-            bookService.addBook(new Book(9, "Sefiller", "Victor Hugo", 300.0, "44", new SimpleDateFormat("yyyy-MM-dd").parse("2021-01-01"), BookStatus.AVAILABLE,"Klasik"));
-            bookService.addBook(new Book(10, "Suç ve Ceza", "Dostoyevski", 1000.0, "1", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.AVAILABLE,"Roman"));
-            bookService.addBook(new Book(11, "TestYazar1", "Dostoyevski", 1000.0, "1", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.AVAILABLE,"Roman"));
+            bookService.addBook(new Book(1, "Kitap1", "Jane Austen", 150.0, "2", new SimpleDateFormat("yyyy-MM-dd").parse("2021-01-01"), BookStatus.AVAILABLE, "Klasik"));
+            bookService.addBook(new Book(2, "Kitap2", "Cervantes Saavedra", 200.0, "6", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.AVAILABLE,"Roman"));
+            bookService.addBook(new Book(3, "Kitap3", "Charles Dickens", 120.0, "3", new SimpleDateFormat("yyyy-MM-dd").parse("2021-01-01"), BookStatus.AVAILABLE,"Klasik"));
+            bookService.addBook(new Book(4, "Kitap4", "Henri Beyle Stendhal", 220.0, "11", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.AVAILABLE,"Hikaye"));
+            bookService.addBook(new Book(5, "Kitap5", "Oscar Wilde", 150.0, "41", new SimpleDateFormat("yyyy-MM-dd").parse("2021-01-01"), BookStatus.AVAILABLE,"Hikaye"));
+            bookService.addBook(new Book(6, "Kitap6", "Lev Nikolayeviç Tolstoy", 280.0, "37", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.MAINTENANCE,"Roman"));
+            bookService.addBook(new Book(7, "Kitap6", "Victor Hugo", 300.0, "44", new SimpleDateFormat("yyyy-MM-dd").parse("2021-01-01"), BookStatus.RESERVED,"Klasik"));
+            bookService.addBook(new Book(8, "Kitap7", "Dostoyevski", 1000.0, "1", new SimpleDateFormat("yyyy-MM-dd").parse("2021-02-01"), BookStatus.BORROWED,"Roman"));
         } catch (ParseException e) {
             e.printStackTrace();
         }
